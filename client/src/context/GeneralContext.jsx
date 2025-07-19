@@ -8,6 +8,9 @@ export const GeneralContext = createContext();
 const GeneralContextProvider = ({ children }) => {
   const WS = import.meta.env.VITE_API_BASE_URL;
 
+  
+
+
   const navigate = useNavigate();
 
   const [socket, setSocket] = useState(null);
